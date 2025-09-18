@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="Bai5.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="Bai5.html">Trang chủ</a> |
+        <a href="video.html">Video Quê Hương</a> |
+        <a href="experience.html">Trải Nghiệm</a> |
+        <a href="register.html">Đăng ký</a>
+    </div>
+    <div class="container">
+        <h1>Đăng ký</h1>
+        <form method="post" action="">
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label>Độ tuổi:</label><br>
+            <input type="radio" id="age1" name="age" value="<18" required>
+            <label for="age1">Dưới 18</label>
+            <input type="radio" id="age2" name="age" value="19-35">
+            <label for="age2">19-35</label>
+            <input type="radio" id="age3" name="age" value="36-48">
+            <label for="age3">36-48</label>
+            <input type="radio" id="age4" name="age" value=">49">
+            <label for="age4">Trên 49</label><br><br>
+
+            <label for="profession">Nghề nghiệp:</label><br>
+            <input type="text" id="profession" name="profession" required><br><br>
+
+            <label for="country">Quốc gia:</label><br>
+            <select id="country" name="country" required>
+                <option value="">--Chọn quốc gia--</option>
+                <option value="vietnam">Việt Nam</option>
+                <option value="usa">Mỹ</option>
+                <option value="uk">Anh</option>
+                <option value="japan">Nhật Bản</option>
+                <option value="other">Khác</option>
+            </select><br><br>
+
+            <label for="interests">Sở thích:</label><br>
+            <select id="interests" name="interests" multiple size="4" required>
+                <option value="sports">Thể thao</option>
+                <option value="music">Âm nhạc</option>
+                <option value="reading">Đọc sách</option>
+                <option value="travel">Du lịch</option>
+                <option value="coding">Lập trình</option>
+            </select><br><br>
+
+            <label for="about">Bạn biết đến trang web này qua đâu?</label><br>
+            <textarea id="about" name="about" rows="4" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Gửi">
+        </form>
+    </div>
+</body>
+</html>
