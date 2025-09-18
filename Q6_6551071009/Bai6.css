@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    position: relative;
+}
+.header-top {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+.header-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.85);
+}
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.logo-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.logo {
+    font-size: 2.4em;
+    font-weight: 900;
+    color: #111;
+    letter-spacing: 0.12em;
+    text-shadow: none;
+}
+.slogan {
+    font-size: 1.13em;
+    color: #0a3570;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-shadow: none;
+}
+.hotline {
+    margin-top: 6px;
+    font-size: 1em;
+    color: #b85c00;
+    background: rgba(255,255,255,0.85);
+    border-radius: 6px;
+    padding: 2px 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    display: inline-block;
+}
+.main-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 700px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+.sidebar {
+    width: 220px;
+    background: #f7f7f7;
+    border-right: 1px solid #e0e0e0;
+    padding: 18px 12px 0 18px;
+}
+.sidebar h3 {
+    font-size: 1.1em;
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #bdbdbd;
+    padding-bottom: 6px;
+}
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+.sidebar > ul > li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.sidebar ul ul {
+    margin-left: 12px;
+    font-weight: normal;
+}
+.sidebar ul ul li {
+    margin-bottom: 4px;
+    font-size: 0.98em;
+}
+.content {
+    flex: 1;
+    padding: 0 0 20px 0;
+}
+.banner {
+    width: 100%;
+    background: #fff;
+    padding: 18px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+.banner-img {
+    width: 90%;
+    max-height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.section {
+    margin: 18px 0 0 0;
+    padding: 0 30px;
+}
+.section h2 {
+    background: #e6b800;
+    color: #fff;
+    padding: 8px 0 8px 18px;
+    margin: 0 -30px 18px -30px;
+    font-size: 1.15em;
+    border-radius: 4px 4px 0 0;
+    letter-spacing: 1px;
+}
+.products {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    background: #fff;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 6px;
+    width: 210px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    padding: 16px 10px 18px 10px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+}
+.product .name {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 6px;
+}
+.product .price {
+    color: #e6b800;
+    font-weight: bold;
+    font-size: 1.08em;
+    margin-bottom: 10px;
+}
+.product button {
+    background: #e6b800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.product button:hover {
+    background: #b38f00;
+}
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0 8px 0;
+    font-size: 1em;
+    margin-top: 0;
+}
+.footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.footer a:hover {
+    color: #e6b800;
+}
