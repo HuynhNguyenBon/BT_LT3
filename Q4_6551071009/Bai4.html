@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Bai 4" content="Huynh Nguyen Bon">
+    <title>Task 4: User Form</title>
+    <link rel="stylesheet" href="Bai4.css" type="text/css">
+</head>
+<body>
+
+  <h2>Task 4: User Information Form</h2>
+
+  
+  <form action="" method="get">
+    
+  
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+  
+    <label>Age:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="age" value="<18" required> &lt;18</label>
+      <label><input type="radio" name="age" value="19-35"> 19-35</label>
+      <label><input type="radio" name="age" value="36-48"> 36-48</label>
+      <label><input type="radio" name="age" value=">49"> &gt;49</label>
+    </div>
+
+    
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" name="profession">
+
+   
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">--Select Country--</option>
+      <option value="Vietnam">Vietnam</option>
+      <option value="USA">USA</option>
+      <option value="Japan">Japan</option>
+      <option value="Germany">Germany</option>
+    </select>
+
+    
+    <label>Interests:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+      <label><input type="checkbox" name="interests" value="Music"> Music</label>
+      <label><input type="checkbox" name="interests" value="Reading"> Reading</label>
+      <label><input type="checkbox" name="interests" value="Travel"> Travel</label>
+      <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label>
+    </div>
+
+    
+    <label for="found">How did you find out about the site?</label>
+    <textarea id="found" name="found" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
